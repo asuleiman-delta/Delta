@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño Web para Empresas en Chile | Delta Digital</title>
+<meta name="description" content="Agencia de diseño web especializada en empresas medianas. Sitios corporativos, e-commerce y plataformas a medida. Google Partner, Meta Business Partner. +50 proyectos entregados en Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:       #06090f;
+  --ink-mid:   #0d1525;
+  --blue:      #1b6fff;
+  --blue-lt:   #4d8fff;
+  --cyan:      #00d4cc;
+  --white:     #ffffff;
+  --off:       #f0f4fc;
+  --g100:      #eef1f8;
+  --g200:      #dde3f0;
+  --g400:      #8892a8;
+  --g600:      #4a5568;
+  --text:      #0d1525;
+  --r:         10px;
+  --rlg:       18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',sans-serif;color:var(--text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5{font-family:'Clash Display',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ═══ NAV ═══ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:13px 5%;
+  background:rgba(6,9,15,.94);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  transition:box-shadow .3s;
+}
+nav.scrolled{box-shadow:0 4px 40px rgba(0,0,0,.45)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo svg{width:32px;height:32px}
+.nav-brand{font-family:'Clash Display',sans-serif;font-weight:700;font-size:.95rem;color:#fff;letter-spacing:.04em}
+.nav-right{display:flex;align-items:center;gap:20px}
+.nav-tel{font-size:.82rem;color:rgba(255,255,255,.4);transition:color .2s}
+.nav-tel:hover{color:rgba(255,255,255,.8)}
+.nav-cta{
+  background:var(--blue);color:#fff;
+  padding:10px 22px;border-radius:8px;
+  font-weight:600;font-size:.85rem;
+  transition:all .2s;white-space:nowrap;
+}
+.nav-cta:hover{background:#155ee0;transform:translateY(-1px);box-shadow:0 6px 20px rgba(27,111,255,.4)}
+
+/* ═══ HERO ═══ */
+.hero{
+  min-height:100vh;background:var(--ink);
+  display:flex;align-items:center;
+  padding:100px 5% 70px;
+  position:relative;overflow:hidden;
+}
+.hero-glow{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 60% 65% at 105% 40%,rgba(27,111,255,.13) 0%,transparent 65%),
+    radial-gradient(ellipse 40% 45% at 0% 85%,rgba(0,212,204,.08) 0%,transparent 55%),
+    radial-gradient(ellipse 30% 30% at 50% 0%,rgba(27,111,255,.05) 0%,transparent 60%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:64px;align-items:center;
+  max-width:1200px;margin:0 auto;
+  position:relative;z-index:2;width:100%;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(27,111,255,.12);border:1px solid rgba(27,111,255,.25);
+  color:#7db3ff;font-size:.72rem;font-weight:600;
+  padding:5px 13px;border-radius:100px;margin-bottom:22px;
+  letter-spacing:.07em;text-transform:uppercase;
+}
+.hero-pulse{width:6px;height:6px;background:var(--blue-lt);border-radius:50%;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{
+  font-size:clamp(2.2rem,4.2vw,3.6rem);
+  font-weight:700;color:#fff;line-height:1.06;
+  letter-spacing:-.025em;margin-bottom:20px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(105deg,#4d8fff 0%,#00d4cc 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-sub{
+  font-size:1rem;color:rgba(255,255,255,.55);
+  line-height:1.78;margin-bottom:28px;max-width:510px;
+}
+.hero-checks{display:flex;flex-direction:column;gap:9px;margin-bottom:32px}
+.hero-check{display:flex;align-items:center;gap:10px;font-size:.85rem;color:rgba(255,255,255,.65)}
+.hero-check-icon{width:18px;height:18px;border-radius:50%;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-check-icon svg{width:10px;height:10px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-p{
+  background:var(--blue);color:#fff;
+  padding:15px 30px;border-radius:9px;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:.95rem;
+  transition:all .2s;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-p:hover{background:#155ee0;transform:translateY(-2px);box-shadow:0 14px 32px rgba(27,111,255,.38)}
+.btn-s{
+  background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);
+  padding:15px 22px;border-radius:9px;font-weight:500;font-size:.9rem;
+  border:1px solid rgba(255,255,255,.12);transition:all .2s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-s:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.25)}
+
+/* Hero right — credibility */
+.hero-cred{display:flex;flex-direction:column;gap:13px}
+.hc-stats{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.hc-stat{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--rlg);padding:20px 18px;text-align:center;transition:all .25s;
+}
+.hc-stat:hover{background:rgba(27,111,255,.08);border-color:rgba(27,111,255,.22)}
+.hc-stat-n{
+  font-family:'Clash Display',sans-serif;font-weight:700;font-size:2rem;
+  background:linear-gradient(135deg,#4d8fff,#00d4cc);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:block;line-height:1;margin-bottom:4px;
+}
+.hc-stat-l{font-size:.72rem;color:rgba(255,255,255,.4);line-height:1.4}
+.hc-clients{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--rlg);padding:16px 18px;
+}
+.hc-clients-lbl{font-size:.68rem;font-weight:600;color:rgba(255,255,255,.28);text-transform:uppercase;letter-spacing:.1em;margin-bottom:11px}
+.hc-tags{display:flex;flex-wrap:wrap;gap:6px}
+.hc-tag{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:6px;padding:4px 10px;
+  font-family:'Clash Display',sans-serif;font-size:.72rem;font-weight:600;
+  color:rgba(255,255,255,.55);letter-spacing:.02em;
+}
+.hc-certs{display:flex;gap:9px}
+.hc-cert{
+  flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:9px;padding:10px 12px;
+  display:flex;align-items:center;gap:7px;
+  font-size:.72rem;font-weight:600;color:rgba(255,255,255,.55);
+  white-space:nowrap;
+}
+.cpip{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+
+/* ═══ TRUST BAR ═══ */
+.trust{background:#080c18;padding:20px 5%;border-bottom:1px solid rgba(255,255,255,.05)}
+.trust-in{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:space-between;
+}
+.trust-lbl{font-size:.68rem;font-weight:600;color:rgba(255,255,255,.28);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.trust-logos{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.tl{font-family:'Clash Display',sans-serif;font-weight:600;font-size:.78rem;color:rgba(255,255,255,.22);letter-spacing:.04em}
+.tl.hi{color:rgba(255,255,255,.38);font-size:.88rem}
+
+/* ═══ SHARED ═══ */
+section{padding:88px 5%}
+.wrap{max-width:1200px;margin:0 auto}
+.stag{
+  display:inline-block;background:rgba(27,111,255,.08);color:var(--blue);
+  font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  padding:4px 12px;border-radius:100px;margin-bottom:13px;
+}
+.stitle{
+  font-size:clamp(1.85rem,3vw,2.7rem);font-weight:700;
+  color:var(--text);line-height:1.1;letter-spacing:-.02em;margin-bottom:13px;
+}
+.stitle.lt{color:#fff}
+.ssub{font-size:.98rem;color:var(--g400);line-height:1.72;max-width:550px}
+
+/* ═══ PAIN SECTION ═══ */
+.pain{background:var(--off)}
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.pain-cards{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.pain-card{
+  display:flex;gap:14px;padding:18px;
+  border:1px solid var(--g200);border-radius:var(--rlg);transition:all .2s;background:#fff;
+}
+.pain-card:hover{border-color:rgba(27,111,255,.25);box-shadow:0 6px 24px rgba(0,0,0,.05)}
+.pain-card-icon{
+  width:40px;height:40px;flex-shrink:0;border-radius:9px;
+  background:linear-gradient(135deg,rgba(27,111,255,.1),rgba(0,212,204,.06));
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+}
+.pain-card h4{font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:3px}
+.pain-card p{font-size:.8rem;color:var(--g400);line-height:1.55}
+.pain-warning{
+  margin-top:20px;padding:15px 18px;
+  background:#fff9ec;border:1px solid #f0d080;border-radius:var(--r);
+}
+.pain-warning p{font-size:.8rem;color:#8a6000;line-height:1.5}
+.pain-warning strong{color:#6b4a00}
+
+/* ═══ PORTFOLIO ═══ */
+.portfolio{background:#fff}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.port-card{
+  background:#fff;border-radius:var(--rlg);overflow:hidden;
+  border:1px solid var(--g200);transition:all .3s;display:flex;flex-direction:column;
+}
+.port-card:hover{transform:translateY(-6px);box-shadow:0 28px 64px rgba(0,0,0,.1);border-color:#c5d5f5}
+.port-thumb{
+  height:175px;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.port-thumb-lbl{
+  position:absolute;top:11px;left:11px;
+  background:rgba(0,0,0,.72);color:rgba(255,255,255,.82);
+  font-size:.68rem;font-weight:600;padding:3px 9px;border-radius:100px;letter-spacing:.04em;
+}
+.port-ghost{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Clash Display',sans-serif;font-size:5rem;font-weight:800;
+  opacity:.05;letter-spacing:-.06em;color:#fff;
+}
+.mockup{
+  width:84%;background:#fff;border-radius:7px;
+  border:1px solid rgba(0,0,0,.09);
+  box-shadow:0 8px 28px rgba(0,0,0,.14);
+  overflow:hidden;position:relative;z-index:1;
+}
+.mockup-bar{height:22px;background:#f3f3f3;border-bottom:1px solid #e5e5e5;display:flex;align-items:center;padding:0 7px;gap:4px}
+.md{width:6px;height:6px;border-radius:50%}
+.mockup-body{padding:9px}
+.mhero{height:38px;border-radius:4px;margin-bottom:5px}
+.mline{height:5px;border-radius:2px;margin-bottom:3px;background:#e5e5e5}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:5px}
+.mcard{height:26px;border-radius:3px;background:#ebebeb}
+.port-body{padding:20px;flex:1;display:flex;flex-direction:column}
+.port-type{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:5px}
+.port-name{font-family:'Clash Display',sans-serif;font-weight:600;font-size:.98rem;color:var(--text);margin-bottom:6px}
+.port-desc{font-size:.8rem;color:var(--g400);line-height:1.6;flex:1}
+.port-result{
+  margin-top:13px;padding:9px 12px;
+  background:rgba(27,111,255,.06);border-radius:7px;
+  border:1px solid rgba(27,111,255,.12);
+  font-size:.76rem;color:var(--blue);font-weight:600;
+}
+.port-cta{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:.8rem;font-weight:600;color:var(--blue);
+  margin-top:13px;transition:gap .2s;
+}
+.port-cta:hover{gap:9px}
+
+/* ═══ SOCIAL PROOF BANNER ═══ */
+.sp-banner{
+  background:linear-gradient(135deg,var(--ink),#0d1a3a);
+  padding:48px 5%;
+}
+.sp-banner-in{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border:1px solid rgba(255,255,255,.08);border-radius:var(--rlg);overflow:hidden;
+}
+.sp-item{
+  padding:32px 28px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+  transition:background .2s;
+}
+.sp-item:last-child{border-right:none}
+.sp-item:hover{background:rgba(27,111,255,.06)}
+.sp-n{
+  font-family:'Clash Display',sans-serif;font-weight:700;font-size:2.4rem;
+  background:linear-gradient(135deg,#4d8fff,#00d4cc);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:block;line-height:1;margin-bottom:6px;
+}
+.sp-l{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.5}
+
+/* ═══ PRICING ═══ */
+.pricing{background:var(--off)}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
+.pc{
+  border:1.5px solid var(--g200);border-radius:var(--rlg);padding:26px 20px;
+  transition:all .25s;position:relative;overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;
+}
+.pc::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  opacity:0;transition:opacity .25s;
+}
+.pc:hover{border-color:rgba(27,111,255,.3);transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.08)}
+.pc:hover::before{opacity:1}
+.pc.feat{border-color:var(--blue);background:linear-gradient(160deg,rgba(27,111,255,.04),rgba(0,212,204,.02))}
+.pc.feat::before{opacity:1}
+.pc-badge{
+  position:absolute;top:14px;right:14px;
+  background:var(--blue);color:#fff;
+  font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:100px;letter-spacing:.05em;text-transform:uppercase;
+}
+.pc-icon{font-size:1.5rem;margin-bottom:12px}
+.pc-type{font-family:'Clash Display',sans-serif;font-weight:600;font-size:.95rem;color:var(--text);margin-bottom:5px}
+.pc-price{font-family:'Clash Display',sans-serif;font-weight:700;font-size:1.55rem;color:var(--blue);margin-bottom:3px;line-height:1}
+.pc-note{font-size:.72rem;color:var(--g400);margin-bottom:14px}
+.pc-desc{font-size:.8rem;color:var(--g600);line-height:1.6;margin-bottom:14px}
+.pc-list{list-style:none;display:flex;flex-direction:column;gap:5px;flex:1}
+.pc-list li{font-size:.76rem;color:var(--g600);display:flex;align-items:flex-start;gap:6px}
+.pc-list li::before{content:'✓';color:var(--blue);font-weight:700;flex-shrink:0;margin-top:1px}
+.pc-btn{
+  display:block;text-align:center;margin-top:18px;
+  background:var(--blue);color:#fff;
+  padding:11px;border-radius:8px;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:.83rem;
+  transition:all .2s;
+}
+.pc-btn:hover{background:#155ee0}
+.pc-btn.ol{background:transparent;border:1.5px solid var(--g200);color:var(--g600)}
+.pc-btn.ol:hover{border-color:var(--blue);color:var(--blue);background:transparent}
+.pricing-disc{text-align:center;font-size:.78rem;color:var(--g400);margin-top:18px}
+
+/* ═══ INCLUDES ═══ */
+.incl{background:var(--ink);padding:80px 5%}
+.incl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:48px}
+.ii{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:var(--r);padding:16px 15px;
+  display:flex;align-items:flex-start;gap:11px;transition:all .2s;
+}
+.ii:hover{background:rgba(27,111,255,.08);border-color:rgba(27,111,255,.2)}
+.ii-ico{font-size:1.1rem;flex-shrink:0;margin-top:1px}
+.ii strong{display:block;font-size:.83rem;font-weight:600;color:#fff;margin-bottom:2px}
+.ii span{font-size:.73rem;color:rgba(255,255,255,.38);line-height:1.5}
+
+/* ═══ PROCESS ═══ */
+.process{background:#fff}
+.process-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:48px}
+.process-team{
+  background:var(--ink);border-radius:var(--rlg);padding:28px;
+  position:relative;overflow:hidden;
+}
+.process-team-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 60% at 80% 20%,rgba(27,111,255,.12),transparent);
+}
+.process-team h4{color:#fff;font-size:1rem;margin-bottom:16px;position:relative;z-index:1}
+.team-roles{display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}
+.team-role{
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  border-radius:9px;padding:11px 14px;
+}
+.role-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.role-name{font-size:.83rem;font-weight:600;color:#fff}
+.role-desc{font-size:.74rem;color:rgba(255,255,255,.4);margin-left:auto}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.proc{
+  background:var(--off);border:1px solid var(--g200);border-radius:var(--rlg);padding:22px;
+  position:relative;transition:all .2s;
+}
+.proc:hover{border-color:rgba(27,111,255,.25);box-shadow:0 8px 28px rgba(0,0,0,.05)}
+.proc-n{
+  font-family:'Clash Display',sans-serif;font-weight:800;font-size:2.2rem;
+  color:rgba(27,111,255,.1);position:absolute;top:14px;right:16px;line-height:1;
+}
+.proc-ph{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:7px}
+.proc-title{font-family:'Clash Display',sans-serif;font-weight:600;font-size:.93rem;color:var(--text);margin-bottom:7px}
+.proc-desc{font-size:.79rem;color:var(--g400);line-height:1.6}
+
+/* ═══ WHY ═══ */
+.why{background:var(--off)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-feats{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.wf{
+  display:flex;gap:15px;padding:18px;
+  border:1px solid var(--g200);border-radius:var(--rlg);background:#fff;transition:all .2s;
+}
+.wf:hover{border-color:rgba(27,111,255,.25);box-shadow:0 6px 24px rgba(0,0,0,.05)}
+.wf-ico{
+  width:42px;height:42px;flex-shrink:0;border-radius:10px;
+  background:linear-gradient(135deg,rgba(27,111,255,.1),rgba(0,212,204,.06));
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+}
+.wf h4{font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:3px}
+.wf p{font-size:.79rem;color:var(--g400);line-height:1.55}
+.why-visual{
+  background:var(--ink);border-radius:20px;padding:32px;
+  position:relative;overflow:hidden;
+}
+.why-vbg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 65% 55% at 80% 20%,rgba(27,111,255,.14),transparent);
+}
+.why-stats{display:grid;grid-template-columns:1fr 1fr;gap:13px;position:relative;z-index:1}
+.ws{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r);padding:18px;text-align:center;
+}
+.ws-n{
+  font-family:'Clash Display',sans-serif;font-size:2rem;font-weight:700;
+  background:linear-gradient(135deg,#4d8fff,#00d4cc);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  display:block;line-height:1;margin-bottom:3px;
+}
+.ws-l{font-size:.74rem;color:rgba(255,255,255,.4)}
+.why-certs{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px;position:relative;z-index:1}
+.wc{
+  flex:1;min-width:120px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:8px;padding:10px 12px;
+  display:flex;align-items:center;gap:7px;
+  font-size:.73rem;font-weight:600;color:rgba(255,255,255,.6);
+}
+.wcp{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.why-diff{
+  margin-top:14px;position:relative;z-index:1;
+  background:rgba(27,111,255,.1);border:1px solid rgba(27,111,255,.2);
+  border-radius:var(--r);padding:14px 16px;
+}
+.why-diff p{font-size:.79rem;color:rgba(255,255,255,.7);line-height:1.6}
+.why-diff strong{color:#7db3ff}
+
+/* ═══ TESTIMONIALS ═══ */
+.testi{background:#fff}
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:48px}
+.tc{
+  border:1.5px solid var(--g200);border-radius:var(--rlg);padding:26px;
+  transition:all .2s;display:flex;flex-direction:column;
+}
+.tc:hover{border-color:rgba(27,111,255,.25);box-shadow:0 8px 30px rgba(27,111,255,.07)}
+.tc-stars{color:#f59e0b;font-size:.85rem;margin-bottom:13px}
+.tc-text{font-size:.9rem;color:var(--g600);line-height:1.75;margin-bottom:16px;font-style:italic;flex:1}
+.tc-author{display:flex;align-items:center;gap:11px}
+.tc-av{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Clash Display',sans-serif;font-weight:700;font-size:.8rem;color:#fff;
+}
+.tc-name{font-weight:600;font-size:.83rem;color:var(--text)}
+.tc-co{font-size:.73rem;color:var(--g400)}
+
+/* ═══ CLIENTS ═══ */
+.clients{background:var(--off)}
+.clients-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:11px;margin-top:38px}
+.cl{
+  background:#fff;border:1px solid var(--g200);border-radius:var(--r);
+  padding:14px 8px;display:flex;align-items:center;justify-content:center;
+  font-family:'Clash Display',sans-serif;font-weight:600;font-size:.65rem;
+  color:#aab0c0;text-align:center;min-height:54px;
+  letter-spacing:.04em;text-transform:uppercase;transition:all .2s;
+}
+.cl:hover{border-color:#c5d5f5;color:#4b6cb7;background:rgba(27,111,255,.02)}
+
+/* ═══ URGENCY ═══ */
+.urgency{
+  background:linear-gradient(135deg,var(--ink),#0d1a3a);
+  padding:56px 5%;position:relative;overflow:hidden;
+}
+.urgency::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 55% 90% at 75% 50%,rgba(27,111,255,.1),transparent);
+}
+.urgency-in{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:40px;flex-wrap:wrap;position:relative;z-index:1;
+}
+.urgency-text h2{color:#fff;font-size:clamp(1.5rem,2.5vw,2.1rem);margin-bottom:9px}
+.urgency-text p{color:rgba(255,255,255,.5);max-width:440px;line-height:1.7;font-size:.93rem}
+.urgency-slots{display:flex;flex-direction:column;gap:9px;min-width:230px}
+.uslot{
+  display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:9px;padding:11px 15px;
+}
+.uind{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.uind.taken{background:#ef4444}
+.uind.avail{background:#22c55e;animation:blink 2s ease-in-out infinite}
+.uslot-t{font-size:.8rem;color:rgba(255,255,255,.6)}
+.uslot-t strong{color:#fff}
+
+/* ═══ FORM ═══ */
+.formsec{background:var(--ink);padding:90px 5%;position:relative;overflow:hidden}
+.formsec::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 50% 70% at 100% 55%,rgba(27,111,255,.1),transparent);
+}
+.form-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:start;
+  position:relative;z-index:2;max-width:1200px;margin:0 auto;
+}
+.fl h2{color:#fff;font-size:clamp(1.85rem,2.8vw,2.6rem);line-height:1.1;margin-bottom:15px}
+.fl p{color:rgba(255,255,255,.5);font-size:.97rem;line-height:1.75;margin-bottom:30px}
+.fsteps{display:flex;flex-direction:column;gap:13px}
+.fstep{display:flex;gap:13px;align-items:flex-start}
+.fstep-n{
+  min-width:30px;height:30px;border-radius:7px;
+  background:rgba(27,111,255,.18);border:1px solid rgba(27,111,255,.28);
+  color:#7db3ff;font-family:'Clash Display',sans-serif;font-weight:700;font-size:.8rem;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.fstep-t strong{display:block;color:#fff;font-size:.86rem;margin-bottom:2px}
+.fstep-t span{color:rgba(255,255,255,.42);font-size:.78rem}
+.fcard{background:#fff;border-radius:20px;padding:34px;box-shadow:0 40px 100px rgba(0,0,0,.45)}
+.fcard-title{font-family:'Clash Display',sans-serif;font-size:1.25rem;font-weight:700;color:var(--text);margin-bottom:4px}
+.fcard-sub{font-size:.8rem;color:var(--g400);margin-bottom:22px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.fg{margin-bottom:12px}
+.fg label{display:block;font-size:.76rem;font-weight:600;color:var(--g600);margin-bottom:4px}
+.fg input,.fg select,.fg textarea{
+  width:100%;padding:10px 12px;
+  border:1.5px solid var(--g200);border-radius:8px;
+  font-family:'Instrument Sans',sans-serif;font-size:.86rem;color:var(--text);
+  transition:border-color .2s,box-shadow .2s;background:#fff;
+  -webkit-appearance:none;appearance:none;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(27,111,255,.1);
+}
+.fg textarea{resize:none;height:68px}
+.fsub{
+  width:100%;padding:14px;
+  background:linear-gradient(135deg,var(--blue),#1560e0);
+  color:#fff;border:none;border-radius:9px;
+  font-family:'Clash Display',sans-serif;font-weight:700;font-size:.95rem;
+  cursor:pointer;transition:all .2s;margin-top:4px;letter-spacing:.01em;
+}
+.fsub:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(27,111,255,.4)}
+.fnext{
+  margin-top:11px;padding:10px 13px;
+  background:#f0faf0;border:1px solid #b8ddb8;border-radius:8px;
+  font-size:.76rem;color:#1e5e1e;
+}
+.fdisc{text-align:center;font-size:.71rem;color:var(--g400);margin-top:9px}
+.fguarantee{
+  display:flex;align-items:flex-start;gap:10px;
+  margin-top:14px;padding:12px 14px;
+  background:rgba(27,111,255,.05);border:1px solid rgba(27,111,255,.12);border-radius:9px;
+}
+.fguarantee p{font-size:.76rem;color:var(--g600);line-height:1.55}
+.fguarantee strong{color:var(--blue)}
+
+/* ═══ FOOTER ═══ */
+footer{background:#04060a;padding:34px 5%}
+.foot{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-brand{font-family:'Clash Display',sans-serif;font-weight:700;font-size:.95rem;color:rgba(255,255,255,.6);letter-spacing:.06em}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a{color:rgba(255,255,255,.28);font-size:.76rem;transition:color .2s}
+.foot-links a:hover{color:rgba(255,255,255,.7)}
+.foot-copy{color:rgba(255,255,255,.18);font-size:.7rem}
+
+/* ═══ REVEAL ═══ */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.rv.on{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .hc-stats,.hc-certs,.hero-cred{display:none}
+  .hc-clients{display:none}
+  .pain-grid,.why-grid,.form-grid{grid-template-columns:1fr;gap:40px}
+  .process-header{grid-template-columns:1fr}
+  .port-grid{grid-template-columns:1fr 1fr}
+  .pricing-grid{grid-template-columns:1fr 1fr}
+  .incl-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .clients-grid{grid-template-columns:repeat(3,1fr)}
+  .sp-banner-in{grid-template-columns:repeat(2,1fr)}
+  .sp-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
+  .sp-item:nth-child(2n){border-right:none}
+  .urgency-in{flex-direction:column}
+}
+@media(max-width:600px){
+  section{padding:60px 5%}
+  .port-grid,.pricing-grid{grid-template-columns:1fr}
+  .incl-grid{grid-template-columns:1fr 1fr}
+  .process-grid{grid-template-columns:1fr}
+  .clients-grid{grid-template-columns:repeat(2,1fr)}
+  .frow{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column}
+  .trust-logos{gap:12px}
+  .sp-banner-in{grid-template-columns:1fr 1fr}
+  .nav-tel{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════ NAV ══════════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none">
+      <path d="M20 4L36 13V27L20 36L4 27V13L20 4Z" fill="#1b6fff" opacity=".15"/>
+      <path d="M12 15L20 10L28 15V25L20 30L12 25V15Z" fill="#1b6fff"/>
+      <path d="M20 10L28 15L20 20L12 15L20 10Z" fill="#4d8fff"/>
+    </svg>
+    <span class="nav-brand">DELTA DIGITAL</span>
+  </a>
+  <div class="nav-right">
+    <a href="tel:+56999098594" class="nav-tel">+56 9 9909 8594</a>
+    <a href="#cotiza" class="nav-cta">Obtén una propuesta →</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow"><span class="hero-pulse"></span>Diseño Web · Chile</div>
+      <h1>Tu sitio web define <em>cómo el mundo percibe</em> a tu empresa</h1>
+      <p class="hero-sub">Diseñamos sitios web estratégicos para empresas medianas que necesitan una presencia digital a la altura de su negocio — con foco en posicionamiento, conversión y resultados medibles.</p>
+      <div class="hero-checks">
+        <div class="hero-check">
+          <div class="hero-check-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-3.5" stroke="#22c55e" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          Diseño 100% a la medida — sin plantillas genéricas
+        </div>
+        <div class="hero-check">
+          <div class="hero-check-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-3.5" stroke="#22c55e" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          SEO técnico integrado desde la arquitectura
+        </div>
+        <div class="hero-check">
+          <div class="hero-check-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-3.5" stroke="#22c55e" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          Ejecutivo de cuentas dedicado — no tercerizamos
+        </div>
+        <div class="hero-check">
+          <div class="hero-check-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2 2 4-3.5" stroke="#22c55e" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          Google Partner + Meta Business Partner certificados
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#cotiza" class="btn-p">📋 Obtén una propuesta a medida</a>
+        <a href="#portafolio" class="btn-s">Ver trabajos →</a>
+      </div>
+    </div>
+    <div class="hero-cred">
+      <div class="hc-stats">
+        <div class="hc-stat"><span class="hc-stat-n">50+</span><span class="hc-stat-l">Proyectos web entregados</span></div>
+        <div class="hc-stat"><span class="hc-stat-n">7+</span><span class="hc-stat-l">Años en el mercado</span></div>
+        <div class="hc-stat"><span class="hc-stat-n">20+</span><span class="hc-stat-l">Especialistas en equipo</span></div>
+        <div class="hc-stat"><span class="hc-stat-n">100%</span><span class="hc-stat-l">Diseño a medida</span></div>
+      </div>
+      <div class="hc-clients">
+        <div class="hc-clients-lbl">Algunos clientes</div>
+        <div class="hc-tags">
+          <span class="hc-tag">Lollapalooza</span>
+          <span class="hc-tag">ASSA ABLOY</span>
+          <span class="hc-tag">DuocUC</span>
+          <span class="hc-tag">Puerto Coquimbo</span>
+          <span class="hc-tag">U. Adolfo Ibáñez</span>
+          <span class="hc-tag">Clínica U. Andes</span>
+        </div>
+      </div>
+      <div class="hc-certs">
+        <div class="hc-cert"><div class="cpip" style="background:#4285F4"></div>Google Partner</div>
+        <div class="hc-cert"><div class="cpip" style="background:#0082FB"></div>Meta Partner</div>
+        <div class="hc-cert"><div class="cpip" style="background:#FF7A59"></div>HubSpot Partner</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TRUST BAR ══════════════════════ -->
+<div class="trust">
+  <div class="trust-in">
+    <span class="trust-lbl">Confían en nosotros</span>
+    <div class="trust-logos">
+      <span class="tl hi">Lollapalooza</span>
+      <span class="tl hi">ASSA ABLOY</span>
+      <span class="tl hi">DuocUC</span>
+      <span class="tl">Puerto Coquimbo</span>
+      <span class="tl">Clínica U. de los Andes</span>
+      <span class="tl">U. Adolfo Ibáñez</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ PAIN ══════════════════════ -->
+<section class="pain rv">
+  <div class="wrap">
+    <div class="pain-grid">
+      <div>
+        <span class="stag">¿Para qué tipo de empresa trabajamos?</span>
+        <h2 class="stitle">Un sitio web que representa el peso real de tu empresa</h2>
+        <p class="ssub">Trabajamos con empresas medianas que ya superaron la etapa de "tener un sitio web" y necesitan una presencia digital que venda, posicione y genere credibilidad.</p>
+        <div class="pain-warning">
+          <p>⚠️ <strong>Este servicio no es para ti si</strong> buscas la opción más barata del mercado, necesitas una plantilla lista en 48 horas, o no tienes claro el objetivo de negocio que debe cumplir tu sitio.</p>
+        </div>
+      </div>
+      <div class="pain-cards">
+        <div class="pain-card">
+          <div class="pain-card-icon">🎯</div>
+          <div>
+            <h4>Tienes objetivos comerciales claros</h4>
+            <p>Generar leads, aumentar ventas online, posicionar en Google — no solo "tener presencia".</p>
+          </div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-card-icon">🏢</div>
+          <div>
+            <h4>Tu empresa tiene una imagen que cuidar</h4>
+            <p>La calidad visual de tu sitio web es un reflejo directo de la percepción de tu marca en el mercado.</p>
+          </div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-card-icon">📈</div>
+          <div>
+            <h4>Quieres un equipo, no un freelancer</h4>
+            <p>Estrategia, diseño, desarrollo, SEO y un ejecutivo de cuentas coordinando todo el proceso.</p>
+          </div>
+        </div>
+        <div class="pain-card">
+          <div class="pain-card-icon">🔗</div>
+          <div>
+            <h4>Buscas integración con tu estrategia digital</h4>
+            <p>Tu sitio debe conectar con Google Ads, Meta Ads y SEO — no existir en silos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PORTFOLIO ══════════════════════ -->
+<section class="portfolio rv" id="portafolio">
+  <div class="wrap">
+    <span class="stag">Portafolio</span>
+    <h2 class="stitle">Sitios que convierten visitas en resultados</h2>
+    <p class="ssub">Trabajos reales con métricas verificables. Cada proyecto refleja el peso del negocio detrás.</p>
+    <div class="port-grid">
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#1a0a2e,#3d1578)">
+          <div class="port-ghost">LL</div>
+          <span class="port-thumb-lbl">Plataforma a medida</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#6b21a8,#db2777)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#e9d5ff"></div><div class="mcard" style="background:#fbcfe8"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">Plataforma · Agendamiento</div>
+          <div class="port-name">Lollapalooza Chile</div>
+          <div class="port-desc">Sistema de agendamiento para recogida de pulseras en Costanera Center. Proyecto crítico con aforo controlado, desarrollado para el festival 2022.</div>
+          <div class="port-result">🎯 42.821 reservas gestionadas en 16 días de operación</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#0c2a4a,#1a5c8a)">
+          <div class="port-ghost">PC</div>
+          <span class="port-thumb-lbl">Rediseño corporativo</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#0369a1,#0ea5e9)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#e0f2fe"></div><div class="mcard" style="background:#bae6fd"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">Corporativo · Rediseño</div>
+          <div class="port-name">Puerto Coquimbo</div>
+          <div class="port-desc">Rediseño completo de puertocoquimbo.cl con foco en arquitectura de la información y experiencia de usuario. Transformación estructural completa.</div>
+          <div class="port-result">📐 Arquitectura de información rediseñada de cero</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#7f1d1d,#dc2626)">
+          <div class="port-ghost">DOM</div>
+          <span class="port-thumb-lbl">SEO + Web</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#dc2626,#f97316)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#fee2e2"></div><div class="mcard" style="background:#fed7aa"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">Local · SEO + Web</div>
+          <div class="port-name">Pizzerías Domani</div>
+          <div class="port-desc">Posicionamiento SEO local con acciones On-Page, Off-Page y Google My Business. Visibilidad orgánica multiplicada en menos de 6 meses.</div>
+          <div class="port-result">📈 De 6.810 a 16.400 impresiones mensuales (+141%)</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#1a2e0a,#3d6b1a)">
+          <div class="port-ghost">BRV</div>
+          <span class="port-thumb-lbl">E-commerce</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#166534,#15803d)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#dcfce7"></div><div class="mcard" style="background:#bbf7d0"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">E-commerce premium</div>
+          <div class="port-name">Bravery</div>
+          <div class="port-desc">Tienda online para alimento premium de mascotas. Experiencia de compra optimizada para maximizar conversión y ticket promedio.</div>
+          <div class="port-result">🛒 E-commerce con experiencia de compra de alta conversión</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#0a1a2e,#1a3a5c)">
+          <div class="port-ghost">PAR</div>
+          <span class="port-thumb-lbl">Corporativo</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#1e3a5f,#2563eb)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#dbeafe"></div><div class="mcard" style="background:#bfdbfe"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">Corporativo</div>
+          <div class="port-name">Grupo Empresas Pareti</div>
+          <div class="port-desc">Sitio corporativo para grupo empresarial con más de 100 años de trayectoria en Valparaíso. Presencia digital al nivel de su historia.</div>
+          <div class="port-result">🏢 Imagen corporativa renovada para empresa centenaria</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:linear-gradient(135deg,#0a2e1a,#0d6e3a)">
+          <div class="port-ghost">MOR</div>
+          <span class="port-thumb-lbl">E-commerce</span>
+          <div class="mockup">
+            <div class="mockup-bar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div>
+            <div class="mockup-body">
+              <div class="mhero" style="background:linear-gradient(90deg,#065f46,#059669)"></div>
+              <div class="mline" style="width:80%"></div><div class="mline" style="width:60%"></div>
+              <div class="mgrid"><div class="mcard" style="background:#d1fae5"></div><div class="mcard" style="background:#a7f3d0"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-body">
+          <div class="port-type">E-commerce · Mascotas</div>
+          <div class="port-name">Grupo MOR</div>
+          <div class="port-desc">Plataforma e-commerce para alimento de mascotas con catálogo completo, UX optimizada para compra recurrente y SEO estructural.</div>
+          <div class="port-result">🐾 Catálogo completo con arquitectura SEO desde la base</div>
+          <a href="#cotiza" class="port-cta">Quiero algo similar →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SOCIAL PROOF BANNER ══════════════════════ -->
+<div class="sp-banner rv">
+  <div class="sp-banner-in">
+    <div class="sp-item">
+      <span class="sp-n">+141%</span>
+      <span class="sp-l">Crecimiento en impresiones orgánicas — Domani (6 meses)</span>
+    </div>
+    <div class="sp-item">
+      <span class="sp-n">42.821</span>
+      <span class="sp-l">Reservas gestionadas para Lollapalooza en 16 días</span>
+    </div>
+    <div class="sp-item">
+      <span class="sp-n">50+</span>
+      <span class="sp-l">Proyectos web entregados en Chile</span>
+    </div>
+    <div class="sp-item">
+      <span class="sp-n">100%</span>
+      <span class="sp-l">Proyectos diseñados a medida, sin plantillas</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ PRICING ══════════════════════ -->
+<section class="pricing rv" id="precios">
+  <div class="wrap">
+    <span class="stag">Inversión</span>
+    <h2 class="stitle">Precios claros, sin letra chica</h2>
+    <p class="ssub">Transparencia total desde el primer contacto. Cada proyecto incluye diseño responsivo, SEO base, analytics y hosting por 1 año.</p>
+    <div class="pricing-grid">
+
+      <div class="pc">
+        <div class="pc-icon">🎯</div>
+        <div class="pc-type">Landing Page</div>
+        <div class="pc-price">$740.000</div>
+        <div class="pc-note">Desde · No incluye IVA</div>
+        <div class="pc-desc">Para campañas con objetivo único: captar leads, vender un producto o presentar un servicio puntual.</div>
+        <ul class="pc-list">
+          <li>Diseño a medida 1 página</li>
+          <li>Formulario de contacto</li>
+          <li>Google Analytics 4 + Píxel Meta</li>
+          <li>Responsive mobile</li>
+          <li>Hosting + dominio 1 año</li>
+          <li>Certificado SSL</li>
+        </ul>
+        <a href="#cotiza" class="pc-btn ol">Cotizar landing →</a>
+      </div>
+
+      <div class="pc feat">
+        <span class="pc-badge">Más solicitado</span>
+        <div class="pc-icon">🏢</div>
+        <div class="pc-type">Sitio Corporativo</div>
+        <div class="pc-price">$2.190.000</div>
+        <div class="pc-note">Desde · No incluye IVA</div>
+        <div class="pc-desc">La presencia digital completa de tu empresa. Hasta 8 secciones, diseño premium orientado a posicionarte sobre tu competencia.</div>
+        <ul class="pc-list">
+          <li>Diseño multipágina a medida</li>
+          <li>SEO On-Page completo</li>
+          <li>Analytics 4 + Píxel Meta</li>
+          <li>Correos corporativos</li>
+          <li>Panel autoadministrable</li>
+          <li>Capacitación en video</li>
+          <li>Hosting + dominio 1 año</li>
+        </ul>
+        <a href="#cotiza" class="pc-btn">Cotizar corporativo →</a>
+      </div>
+
+      <div class="pc">
+        <div class="pc-icon">🛒</div>
+        <div class="pc-type">E-commerce</div>
+        <div class="pc-price">$2.950.000</div>
+        <div class="pc-note">Desde · No incluye IVA</div>
+        <div class="pc-desc">Tienda online segura y escalable, diseñada para vender. Pasarela de pago, gestión de productos y experiencia de compra optimizada.</div>
+        <ul class="pc-list">
+          <li>Tienda completa a medida</li>
+          <li>Pasarela de pago integrada</li>
+          <li>Gestión de inventario</li>
+          <li>SEO estructural e-commerce</li>
+          <li>Panel de administración</li>
+          <li>Hosting + dominio 1 año</li>
+        </ul>
+        <a href="#cotiza" class="pc-btn ol">Cotizar e-commerce →</a>
+      </div>
+
+      <div class="pc">
+        <div class="pc-icon">⚙️</div>
+        <div class="pc-type">A Medida</div>
+        <div class="pc-price">A cotizar</div>
+        <div class="pc-note">Según alcance del proyecto</div>
+        <div class="pc-desc">Plataformas e-learning, portales inmobiliarios, intranets corporativas, sistemas de agendamiento y desarrollos complejos.</div>
+        <ul class="pc-list">
+          <li>Análisis de requerimientos</li>
+          <li>Arquitectura personalizada</li>
+          <li>Desarrollo backend si aplica</li>
+          <li>Integraciones a sistemas externos</li>
+          <li>QA y pruebas de usuario</li>
+          <li>Soporte post-lanzamiento</li>
+        </ul>
+        <a href="#cotiza" class="pc-btn ol">Cotizar desarrollo →</a>
+      </div>
+
+    </div>
+    <p class="pricing-disc">💡 Los precios son referenciales. El valor final depende del alcance, complejidad y plazo. Todos incluyen reunión de kickoff, QA y capacitación.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════ INCLUDES ══════════════════════ -->
+<section class="incl rv">
+  <div class="wrap">
+    <span class="stag" style="background:rgba(0,212,204,.1);color:var(--cyan)">Incluido en todos los proyectos</span>
+    <h2 class="stitle lt">Todo lo que necesitas desde el primer día</h2>
+    <p class="ssub" style="color:rgba(255,255,255,.45)">Sin cobros adicionales por lo básico. Cada sitio que entregamos viene listo para operar, posicionar y convertir.</p>
+    <div class="incl-grid">
+      <div class="ii"><span class="ii-ico">📊</span><div><strong>Google Analytics 4</strong><span>Medición completa del comportamiento de tus visitas y conversiones</span></div></div>
+      <div class="ii"><span class="ii-ico">🎯</span><div><strong>Píxel de Meta</strong><span>Configuración de remarketing y seguimiento de conversiones</span></div></div>
+      <div class="ii"><span class="ii-ico">🔍</span><div><strong>SEO On-Page</strong><span>Estructura técnica optimizada para posicionar en Google desde el lanzamiento</span></div></div>
+      <div class="ii"><span class="ii-ico">📱</span><div><strong>Diseño Responsive</strong><span>Perfecto en móvil, tablet y desktop — sin compromisos</span></div></div>
+      <div class="ii"><span class="ii-ico">🔒</span><div><strong>Certificado SSL</strong><span>HTTPS configurado. Seguridad y confianza para tus visitantes</span></div></div>
+      <div class="ii"><span class="ii-ico">☁️</span><div><strong>Hosting + Dominio</strong><span>1 año incluido en servidor de alta disponibilidad</span></div></div>
+      <div class="ii"><span class="ii-ico">📧</span><div><strong>Correos Corporativos</strong><span>tú@tuempresa.cl configurados y listos para usar</span></div></div>
+      <div class="ii"><span class="ii-ico">⚡</span><div><strong>Velocidad Optimizada</strong><span>Carga rápida para mejor experiencia y mejor posición en Google</span></div></div>
+      <div class="ii"><span class="ii-ico">✍️</span><div><strong>Redacción de Contenido</strong><span>Copywriting optimizado para SEO y conversión</span></div></div>
+      <div class="ii"><span class="ii-ico">💬</span><div><strong>WhatsApp / Chat en vivo</strong><span>Botón de contacto directo integrado y configurado</span></div></div>
+      <div class="ii"><span class="ii-ico">🎛️</span><div><strong>Panel Autoadministrable</strong><span>Edita tu sitio sin necesitar un técnico o pagar mantención</span></div></div>
+      <div class="ii"><span class="ii-ico">🎓</span><div><strong>Capacitación en Video</strong><span>Documentación completa para que tu equipo gestione el sitio</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PROCESS ══════════════════════ -->
+<section class="process rv">
+  <div class="wrap">
+    <span class="stag">Metodología</span>
+    <h2 class="stitle">9 etapas. Sin improvisación, sin sorpresas</h2>
+    <p class="ssub">Un equipo dedicado con roles definidos en cada etapa del proyecto. Nadie trabaja solo y nadie improvisa.</p>
+    <div class="process-header">
+      <div>
+        <p style="font-size:.93rem;color:var(--g400);line-height:1.75;margin-bottom:20px">
+          Cada proyecto tiene un equipo compuesto por Ejecutivo de cuentas, Diseñador gráfico, Desarrollador web, Redactor y SEO Manager. El Ejecutivo de cuentas es tu punto de contacto directo durante todo el proceso.
+        </p>
+        <p style="font-size:.93rem;color:var(--g400);line-height:1.75">
+          No tercerizamos. No subcontratamos. El equipo que hace tu propuesta es el mismo que entrega tu sitio.
+        </p>
+      </div>
+      <div class="process-team">
+        <div class="process-team-bg"></div>
+        <h4>Tu equipo dedicado</h4>
+        <div class="team-roles">
+          <div class="team-role"><div class="role-dot" style="background:#4d8fff"></div><span class="role-name">Ejecutivo de cuentas</span><span class="role-desc">Tu contacto directo</span></div>
+          <div class="team-role"><div class="role-dot" style="background:#a78bfa"></div><span class="role-name">Diseñador gráfico</span><span class="role-desc">UI/UX</span></div>
+          <div class="team-role"><div class="role-dot" style="background:#34d399"></div><span class="role-name">Desarrollador web</span><span class="role-desc">Frontend/Backend</span></div>
+          <div class="team-role"><div class="role-dot" style="background:#fbbf24"></div><span class="role-name">Redactor</span><span class="role-desc">Contenido SEO</span></div>
+          <div class="team-role"><div class="role-dot" style="background:#f472b6"></div><span class="role-name">SEO Manager</span><span class="role-desc">Posicionamiento</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="process-grid">
+      <div class="proc rv d1"><div class="proc-n">01</div><div class="proc-ph">Inicio</div><div class="proc-title">Reunión de Kickoff</div><div class="proc-desc">Definimos objetivos, público objetivo, referencias visuales y estructura del proyecto.</div></div>
+      <div class="proc rv d2"><div class="proc-n">02</div><div class="proc-ph">Estrategia</div><div class="proc-title">Arquitectura de la información</div><div class="proc-desc">Estructura del sitio, flujo de usuario y jerarquía de contenidos orientada a conversión.</div></div>
+      <div class="proc rv d3"><div class="proc-n">03</div><div class="proc-ph">Diseño</div><div class="proc-title">Proceso de diseño</div><div class="proc-desc">Diseñamos y maquetamos. No avanzamos a desarrollo sin aprobación del 100% del diseño.</div></div>
+      <div class="proc rv d1"><div class="proc-n">04</div><div class="proc-ph">Desarrollo</div><div class="proc-title">Implementación</div><div class="proc-desc">Desarrollo con mejores prácticas de código, velocidad y SEO técnico desde la base.</div></div>
+      <div class="proc rv d2"><div class="proc-n">05</div><div class="proc-ph">Calidad</div><div class="proc-title">QA — Gestión de calidad</div><div class="proc-desc">Pruebas exhaustivas en todos los dispositivos y navegadores antes de publicar.</div></div>
+      <div class="proc rv d3"><div class="proc-n">06</div><div class="proc-ph">Lanzamiento</div><div class="proc-title">Migración a producción</div><div class="proc-desc">Publicación con analytics, píxeles y certificados activados y verificados.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WHY ══════════════════════ -->
+<section class="why rv">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <span class="stag">¿Por qué Delta?</span>
+        <h2 class="stitle">Más que un estudio web. Un equipo estratégico integrado a tu empresa</h2>
+        <div class="why-feats">
+          <div class="wf"><div class="wf-ico">🎨</div><div><h4>Diseño 100% a la medida de tu marca</h4><p>Sin plantillas, sin atajos. Cada sitio parte de cero pensando en tu negocio, tu competencia y tu cliente.</p></div></div>
+          <div class="wf"><div class="wf-ico">⚡</div><div><h4>Entrega a tiempo, metodología probada</h4><p>Proceso de 9 etapas con equipo dedicado. El Ejecutivo de cuentas coordina y te mantiene informado en cada paso.</p></div></div>
+          <div class="wf"><div class="wf-ico">📈</div><div><h4>SEO integrado desde la arquitectura</h4><p>No es un add-on post-lanzamiento. El SEO técnico está en el código, la estructura y el contenido desde el primer día.</p></div></div>
+          <div class="wf"><div class="wf-ico">🔗</div><div><h4>Marketing digital como extensión natural</h4><p>El mismo equipo puede gestionar Google Ads, Meta Ads y SEO. Tu sitio se construye para conectar con esas estrategias.</p></div></div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <div class="why-vbg"></div>
+        <div class="why-stats">
+          <div class="ws"><span class="ws-n">50+</span><span class="ws-l">Proyectos entregados</span></div>
+          <div class="ws"><span class="ws-n">7+</span><span class="ws-l">Años en el mercado</span></div>
+          <div class="ws"><span class="ws-n">20+</span><span class="ws-l">Especialistas activos</span></div>
+          <div class="ws"><span class="ws-n">100%</span><span class="ws-l">Diseño a medida</span></div>
+        </div>
+        <div class="why-certs">
+          <div class="wc"><div class="wcp" style="background:#4285F4"></div>Google Partner</div>
+          <div class="wc"><div class="wcp" style="background:#0082FB"></div>Meta Business Partner</div>
+          <div class="wc"><div class="wcp" style="background:#FF7A59"></div>HubSpot Partner</div>
+        </div>
+        <div class="why-diff">
+          <p>La diferencia con una agencia genérica: <strong>no tercerizamos tu proyecto a freelancers</strong>. El equipo que hace la propuesta es el mismo que entrega el sitio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+<section class="testi rv">
+  <div class="wrap">
+    <span class="stag">Testimonios</span>
+    <h2 class="stitle">Lo que dicen quienes ya trabajaron con nosotros</h2>
+    <div class="testi-grid">
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"Excelente servicio de marketing y publicidad. Han potenciado nuestras ventas, lo que nos ha permitido crecer y consolidarnos en el mercado. Las reuniones periódicas permiten tener información actualizada sobre los avances de cada campaña."</p>
+        <div class="tc-author"><div class="tc-av">FC</div><div><div class="tc-name">Felipe Contreras</div><div class="tc-co">Lexit</div></div></div>
+      </div>
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"Muy buen servicio de desarrollo web. Buena disposición al trabajo y excelente producto final. El equipo entendió perfectamente lo que necesitábamos para la Empresa Portuaria Coquimbo."</p>
+        <div class="tc-author"><div class="tc-av">GI</div><div><div class="tc-name">Guillermo Ismodes</div><div class="tc-co">Puerto Coquimbo</div></div></div>
+      </div>
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"Son muy eficientes y siempre dispuestos a solucionar oportunamente cualquier inconveniente. Eso se agradece un montón. Excelente equipo de profesionales."</p>
+        <div class="tc-author"><div class="tc-av">MG</div><div><div class="tc-name">Mauricio Guzmán</div><div class="tc-co">MOR</div></div></div>
+      </div>
+      <div class="tc">
+        <div class="tc-stars">★★★★★</div>
+        <p class="tc-text">"Son sinónimo de responsabilidad, creatividad, innovación. Sus diseños son modernos, limpios y comprenden a la perfección las exigencias del cliente."</p>
+        <div class="tc-author"><div class="tc-av">MA</div><div><div class="tc-name">Dr. Mauricio Almau</div><div class="tc-co">Hernia Care</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CLIENTS ══════════════════════ -->
+<section class="clients rv">
+  <div class="wrap">
+    <span class="stag">Trayectoria</span>
+    <h2 class="stitle">Marcas que respaldan nuestra trayectoria</h2>
+    <div class="clients-grid">
+      <div class="cl">Lollapalooza</div><div class="cl">Puerto Coquimbo</div>
+      <div class="cl">Clínica U. Andes</div><div class="cl">DuocUC</div>
+      <div class="cl">ASSA ABLOY</div><div class="cl">Santo Tomás</div>
+      <div class="cl">U. Adolfo Ibáñez</div><div class="cl">Grupo Pareti</div>
+      <div class="cl">Colabra</div><div class="cl">HELP</div>
+      <div class="cl">Domani Pizzas</div><div class="cl">Bravery</div>
+      <div class="cl">Carnal Steakhouse</div><div class="cl">Kortawines</div>
+      <div class="cl">MOR</div><div class="cl">Hotel Parada</div>
+      <div class="cl">Schaffner</div><div class="cl">Integrakin</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ URGENCY ══════════════════════ -->
+<section class="urgency rv">
+  <div class="urgency-in">
+    <div class="urgency-text">
+      <h2>Disponibilidad limitada para nuevos proyectos</h2>
+      <p>Trabajamos con un número acotado de proyectos simultáneos para garantizar la calidad de cada entrega. Los proyectos se agenda con al menos 2 semanas de anticipación.</p>
+    </div>
+    <div class="urgency-slots">
+      <div class="uslot"><div class="uind taken"></div><div class="uslot-t"><strong>Marzo 2026</strong> — Sin disponibilidad</div></div>
+      <div class="uslot"><div class="uind avail"></div><div class="uslot-t"><strong>Abril 2026</strong> — 2 slots disponibles</div></div>
+      <div class="uslot"><div class="uind avail"></div><div class="uslot-t"><strong>Mayo 2026</strong> — Slots disponibles</div></div>
+      <a href="#cotiza" class="btn-p" style="margin-top:6px;justify-content:center">Reservar mi slot →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FORM ══════════════════════ -->
+<section class="formsec" id="cotiza">
+  <div class="form-grid">
+    <div class="fl">
+      <h2>Obtén una propuesta a la medida de tu proyecto</h2>
+      <p>Cuéntanos de tu proyecto y en menos de 24 horas hábiles te enviamos una propuesta detallada con alcance, tiempos y presupuesto exacto.</p>
+      <div class="fsteps">
+        <div class="fstep"><div class="fstep-n">1</div><div class="fstep-t"><strong>Llenas el formulario</strong><span>Menos de 1 minuto. Cuéntanos qué tipo de sitio necesitas.</span></div></div>
+        <div class="fstep"><div class="fstep-n">2</div><div class="fstep-t"><strong>Eliges tu horario de reunión</strong><span>En el siguiente paso agendas directo en nuestro calendario.</span></div></div>
+        <div class="fstep"><div class="fstep-n">3</div><div class="fstep-t"><strong>Reunión de diagnóstico gratuita</strong><span>Un especialista analiza tu caso y prepara propuesta a medida.</span></div></div>
+      </div>
+    </div>
+    <div class="fcard">
+      <div class="fcard-title">Cotiza tu proyecto web</div>
+      <div class="fcard-sub">Completa tus datos y en el siguiente paso eliges fecha y hora de reunión.</div>
+      <form id="webForm" onsubmit="handleSubmit(event)">
+        <div class="frow">
+          <div class="fg"><label>Nombre *</label><input type="text" placeholder="Tu nombre" required></div>
+          <div class="fg"><label>Apellido *</label><input type="text" placeholder="Tu apellido" required></div>
+        </div>
+        <div class="fg"><label>Empresa *</label><input type="text" placeholder="Nombre de tu empresa" required></div>
+        <div class="fg"><label>Email corporativo *</label><input type="email" placeholder="tu@empresa.cl" required></div>
+        <div class="fg"><label>Teléfono *</label><input type="tel" placeholder="+56 9 XXXX XXXX" required></div>
+        <div class="fg">
+          <label>¿Qué tipo de sitio necesitas? *</label>
+          <select required>
+            <option value="">Selecciona una opción</option>
+            <option>Landing page</option>
+            <option>Sitio web corporativo</option>
+            <option>Tienda online e-commerce</option>
+            <option>Rediseño de sitio existente</option>
+            <option>Desarrollo a medida / plataforma</option>
+            <option>No sé aún, necesito orientación</option>
+          </select>
+        </div>
+        <button type="submit" class="fsub">Solicitar propuesta gratuita →</button>
+        <div class="fnext">✅ <strong>Siguiente paso:</strong> Podrás elegir fecha y hora de tu reunión de diagnóstico de inmediato.</div>
+        <div class="fguarantee">
+          <span style="font-size:1.2rem;flex-shrink:0">🔒</span>
+          <p><strong>Compromiso de respuesta:</strong> Te enviamos propuesta detallada en menos de 24 horas hábiles. Sin presión, sin vendedores agresivos.</p>
+        </div>
+        <p class="fdisc">Sin spam. Tus datos no se comparten con terceros.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer>
+  <div class="foot">
+    <div class="foot-brand">DELTA DIGITAL</div>
+    <div class="foot-links">
+      <a href="tel:+56999098594">+56 9 9909 8594</a>
+      <a href="mailto:contacto@deltadigital.cl">contacto@deltadigital.cl</a>
+      <a href="#">Dr. Manuel Barros Borgoño N°71 OF1105, Santiago</a>
+    </div>
+    <div class="foot-copy">© 2025 Delta Digital SpA</div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll',()=>{
+    document.getElementById('nav').classList.toggle('scrolled',window.scrollY>30)
+  });
+
+  // Reveal on scroll
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}})
+  },{threshold:.07});
+  document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+  // Form submit
+  function handleSubmit(e){
+    e.preventDefault();
+    const btn=e.target.querySelector('.fsub');
+    btn.textContent='Enviando...';btn.disabled=true;
+    setTimeout(()=>{
+      btn.textContent='✅ Solicitud enviada — redirigiendo para agendar...';
+      btn.style.background='#16a34a';
+      // window.location.href='/gracias-web';
+    },1200);
+  }
+</script>
+</body>
+</html>

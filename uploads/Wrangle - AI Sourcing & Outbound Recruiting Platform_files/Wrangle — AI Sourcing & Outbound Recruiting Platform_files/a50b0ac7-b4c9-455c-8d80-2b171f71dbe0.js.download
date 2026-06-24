@@ -1,0 +1,29 @@
+
+(function() {
+  // Pixel ID: a50b0ac7-b4c9-455c-8d80-2b171f71dbe0
+  // Domain: wrangle.ai
+
+  var clientUidData = {"pid":"a50b0ac7-b4c9-455c-8d80-2b171f71dbe0","org":"451e3cb6-a8c5-46e4-bf45-88501e4f84c3","wl":"f8b4d55a-6f70-44a0-884b-1ddb6c60b6fb","domain":"wrangle.ai","org_slug":"wrangle","wl_slug":"leadpipe"};
+
+  // === PIXELSDK ===
+  var configScript = document.createElement('script');
+  configScript.type = 'application/json';
+  configScript.id = 'pixelsdk-config-a50b0ac7-b4c9-455c-8d80-2b171f71dbe0-config';
+  configScript.textContent = JSON.stringify({
+    globalParams: clientUidData
+  });
+
+  var pixelSdkScript = document.createElement('script');
+  pixelSdkScript.src = 'https://cdn.pixel.leadpipe.com/pixels/50eb9810-e48f-48c6-a106-4430acd08126/p.js';
+  pixelSdkScript.defer = true;
+  pixelSdkScript.id = 'pixelsdk-id-a50b0ac7-b4c9-455c-8d80-2b171f71dbe0';
+  pixelSdkScript.setAttribute('data-auto-init', 'true');
+  pixelSdkScript.setAttribute('data-config-id', 'pixelsdk-config-a50b0ac7-b4c9-455c-8d80-2b171f71dbe0');
+
+  document.head.appendChild(configScript);
+  document.head.appendChild(pixelSdkScript);
+  var alwaysOnPixelScript0 = document.createElement('script');
+  alwaysOnPixelScript0.src = 'https://bep.idlp.cloud/pixel.js';
+  alwaysOnPixelScript0.defer = true;
+  document.head.appendChild(alwaysOnPixelScript0);
+})();

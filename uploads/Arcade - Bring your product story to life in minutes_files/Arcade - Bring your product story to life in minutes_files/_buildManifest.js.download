@@ -1,0 +1,853 @@
+self.__BUILD_MANIFEST = {
+  "/": [
+    "static/chunks/0np3t~y1ne2pz.js"
+  ],
+  "/403": [
+    "static/chunks/0y.tj.7i9gh1o.js"
+  ],
+  "/404": [
+    "static/chunks/08a4khhizi4ae.js"
+  ],
+  "/[pid]": [
+    "static/chunks/0ojv~raa453p-.js"
+  ],
+  "/[pid]/[customLinkId]": [
+    "static/chunks/05~5_tfx3e_12.js"
+  ],
+  "/_error": [
+    "static/chunks/0ndocsej7hqjc.js"
+  ],
+  "/admin": [
+    "static/chunks/0~anez-gcdjl0.js"
+  ],
+  "/admin/brand-kits/[workspaceId]/[brandKitId]": [
+    "static/chunks/0n4h5plevlfmt.js"
+  ],
+  "/admin/broll-eval": [
+    "static/chunks/0618877-7sqx8.js"
+  ],
+  "/admin/community-showcase": [
+    "static/chunks/0eb744f4n9s6j.js"
+  ],
+  "/admin/flows": [
+    "static/chunks/0sfnyf0~hg1r4.js"
+  ],
+  "/admin/impersonate": [
+    "static/chunks/0xl2p2pq0bwkl.js"
+  ],
+  "/admin/pipeline-tests": [
+    "static/chunks/0_-z0i2r21w.i.js"
+  ],
+  "/admin/prompt-video-eval": [
+    "static/chunks/0k52nrpfx71lv.js"
+  ],
+  "/admin/prompt-videos": [
+    "static/chunks/0vi789ie5ngkb.js"
+  ],
+  "/admin/showcase": [
+    "static/chunks/0.r6uat.1n228.js"
+  ],
+  "/admin/users": [
+    "static/chunks/0nw1c_~tr977a.js"
+  ],
+  "/admin/users/[userId]": [
+    "static/chunks/00hp3hkw_2r6x.js"
+  ],
+  "/admin/users/[userId]/flags": [
+    "static/chunks/11gas.~l47yzh.js"
+  ],
+  "/admin/users/[userId]/flows": [
+    "static/chunks/062k6vg~_2fl_.js"
+  ],
+  "/admin/video-export": [
+    "static/chunks/0pzjgl~xu2._g.js"
+  ],
+  "/admin/video-ratings": [
+    "static/chunks/0~bi3oe-2esb_.js"
+  ],
+  "/admin/workspaces": [
+    "static/chunks/11r-u2ioz02ej.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]": [
+    "static/chunks/0ja878p0ikhud.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/analytics-30": [
+    "static/chunks/073jpy2njk_~n.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/billing": [
+    "static/chunks/13kzeq9r2ijx8.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/brand-kits": [
+    "static/chunks/0.5.l23zab.24.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/credits": [
+    "static/chunks/0~rpndtv~vgid.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/details": [
+    "static/chunks/0ju9q-o6457_e.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/flags": [
+    "static/chunks/0~ajvd0w_q6dc.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/flows": [
+    "static/chunks/0pzgizgpqq4mk.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/fonts": [
+    "static/chunks/11aat1ky2pewh.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/insights": [
+    "static/chunks/05z~dd7n9pbvz.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/flags": [
+    "static/chunks/0ghwzakjbln-m.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/flows": [
+    "static/chunks/0t0c80vtj2ye7.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/members": [
+    "static/chunks/0tsitzurna27k.js"
+  ],
+  "/admin/workspaces/[workspaceSlug]/voices": [
+    "static/chunks/0y~ia_0_q-69k.js"
+  ],
+  "/admin/workspaces/create-enterprise-trial": [
+    "static/chunks/0xut-x12nivj6.js"
+  ],
+  "/admin/workspaces/transfer": [
+    "static/chunks/05o9q333kzxfl.js"
+  ],
+  "/archived": [
+    "static/chunks/08x~4~elazua4.js"
+  ],
+  "/auth": [
+    "static/chunks/0zlcdt1c_3_jm.js"
+  ],
+  "/auth/desktop/[authId]": [
+    "static/chunks/0~5rbwlb.td~~.js"
+  ],
+  "/auth/figma/[authId]": [
+    "static/chunks/0cc14i4hh6u~z.js"
+  ],
+  "/auth/magic-link": [
+    "static/chunks/02i2.ki0oi21v.js"
+  ],
+  "/collaborate/[token]": [
+    "static/chunks/009iso0envb9l.js"
+  ],
+  "/collections/[pid]/[view]": [
+    "static/chunks/00ug4kex-bno8.js"
+  ],
+  "/collections/[pid]/authorize/[memberId]": [
+    "static/chunks/0amfqud_3o~.d.js"
+  ],
+  "/community-showcase": [
+    "static/chunks/03pp.so5u3418.js"
+  ],
+  "/deleted": [
+    "static/chunks/0zbmj-y6s.-ip.js"
+  ],
+  "/desktop/download": [
+    "static/chunks/0j6d2v05gc2b2.js"
+  ],
+  "/dev/custom-code-agent": [
+    "static/chunks/0hsikkcizkb23.js"
+  ],
+  "/dev/custom-code-examples": [
+    "static/chunks/16gcvmlge5iho.js"
+  ],
+  "/dev/p2v-render-tests": [
+    "static/chunks/0jqi-vm4dnw86.js"
+  ],
+  "/email-verification": [
+    "static/chunks/08mgqgtmjb1cb.js"
+  ],
+  "/extension-installed": [
+    "static/chunks/0i5585.~o27m_.js"
+  ],
+  "/figma/ui": [
+    "static/chunks/0o._gjtns-n7r.js"
+  ],
+  "/flows/[pid]": [
+    "static/chunks/0x5ff8ip0701m.js"
+  ],
+  "/flows/[pid]/authorize/[memberId]": [
+    "static/chunks/13ba9ux2gzups.js"
+  ],
+  "/flows/[pid]/edit": [
+    "static/chunks/0yv1sovzrnpp..js"
+  ],
+  "/flows/[pid]/guide": [
+    "static/chunks/0p9tfign1~c2x.js"
+  ],
+  "/flows/[pid]/insights": [
+    "static/chunks/0mk2ai77h8n4u.js"
+  ],
+  "/flows/[pid]/version/[versionId]": [
+    "static/chunks/0_1bp5ht2y-.4.js"
+  ],
+  "/flows/[pid]/video": [
+    "static/chunks/0oczgiv2dq3.t.js"
+  ],
+  "/flows/shared": [
+    "static/chunks/0paak8efak-zs.js"
+  ],
+  "/flows/team/invite/[invitationId]": [
+    "static/chunks/03ra8.6~_--~c.js"
+  ],
+  "/home": [
+    "static/chunks/0kbn3djyt7kv..js"
+  ],
+  "/inbox": [
+    "static/chunks/02i1.ur5eyac~.js"
+  ],
+  "/integrations/gong/authorize": [
+    "static/chunks/0qzjpmlwne0a2.js"
+  ],
+  "/integrations/gong/callback": [
+    "static/chunks/03fx_wxxrcwf8.js"
+  ],
+  "/integrations/hubspot/authorize": [
+    "static/chunks/09nq8gtzxh_s6.js"
+  ],
+  "/integrations/hubspot/callback": [
+    "static/chunks/0.etjc6c10q3l.js"
+  ],
+  "/integrations/sfdc/authorize": [
+    "static/chunks/0ntd2suapb~is.js"
+  ],
+  "/integrations/sfdc/callback": [
+    "static/chunks/0nh_9o.c7ga0z.js"
+  ],
+  "/join-workspace/[invitationId]": [
+    "static/chunks/013jr45onywy5.js"
+  ],
+  "/logout": [
+    "static/chunks/0_xbu_qgdtywy.js"
+  ],
+  "/maintenance": [
+    "static/chunks/12s6jajvnix.i.js"
+  ],
+  "/mobile": [
+    "static/chunks/0ac_7~pc8o_gv.js"
+  ],
+  "/overdue": [
+    "static/chunks/0eos.ujzmp2-1.js"
+  ],
+  "/preview": [
+    "static/chunks/080-7~6ozwz3s.js"
+  ],
+  "/preview/[id]": [
+    "static/chunks/083hs.tcck9n9.js"
+  ],
+  "/preview/error": [
+    "static/chunks/0pfo4it9z-i5b.js"
+  ],
+  "/preview/video/[gid]": [
+    "static/chunks/0t6rftcxm31lw.js"
+  ],
+  "/prompt-videos/[pid]": [
+    "static/chunks/0_e11uvxxm68..js"
+  ],
+  "/prompt-videos/[pid]/edit": [
+    "static/chunks/0822_imb1.tei.js"
+  ],
+  "/referral": [
+    "static/chunks/0h3ky2~rq71f0.js"
+  ],
+  "/referral/[workspace_id]": [
+    "static/chunks/0q8oy49y0kfei.js"
+  ],
+  "/robots.txt": [
+    "static/chunks/03.qdib3a3105.js"
+  ],
+  "/search": [
+    "static/chunks/0c_xb435coi5i.js"
+  ],
+  "/settings/billing": [
+    "static/chunks/13b9p~l-txlxf.js"
+  ],
+  "/share/[pid]": [
+    "static/chunks/0ol00.wj12s-i.js"
+  ],
+  "/share/[pid]/[customLinkId]": [
+    "static/chunks/0wuc8eqv8nxj-.js"
+  ],
+  "/share/[pid]/guide": [
+    "static/chunks/11~6kp7qga9t5.js"
+  ],
+  "/share/[pid]/offline": [
+    "static/chunks/16yimmv6jk~be.js"
+  ],
+  "/share/[pid]/version/[versionId]": [
+    "static/chunks/08ks0z.to5tv8.js"
+  ],
+  "/share/collections/[pid]": [
+    "static/chunks/07dheb1n-g__2.js"
+  ],
+  "/share/collections/[pid]/view": [
+    "static/chunks/0d2o7ij-d9r9r.js"
+  ],
+  "/share/videos/[pid]": [
+    "static/chunks/0jruk1qv2a85m.js"
+  ],
+  "/sso/[id]": [
+    "static/chunks/15g3jt5hskx__.js"
+  ],
+  "/upload/[id]/desktop/[uploadInfo]": [
+    "static/chunks/01pwihmy_2e~9.js"
+  ],
+  "/upload/[id]/flow": [
+    "static/chunks/0wpj8r62m.1k9.js"
+  ],
+  "/upload/desktop/[uploadInfo]": [
+    "static/chunks/0edjhggr-n54u.js"
+  ],
+  "/upload/figma/[uploadId]": [
+    "static/chunks/0g36t_v6~h6sp.js"
+  ],
+  "/upload/flow": [
+    "static/chunks/02_slk~9j37au.js"
+  ],
+  "/upload/media": [
+    "static/chunks/0kty82puylfzk.js"
+  ],
+  "/video/[pid]": [
+    "static/chunks/0v335srau8iha.js"
+  ],
+  "/videos/[pid]": [
+    "static/chunks/06xcp8sot9-77.js"
+  ],
+  "/visual-projects/[pid]/edit": [
+    "static/chunks/00r61g1zmxm~n.js"
+  ],
+  "/visual-projects/[pid]/template-matrix": [
+    "static/chunks/16ro20q.5mvs3.js"
+  ],
+  "/visual-projects/[pid]/template-matrix/formats": [
+    "static/chunks/063huioklesd~.js"
+  ],
+  "/welcome": [
+    "static/chunks/12xnmbfq9kury.js"
+  ],
+  "/workspaces": [
+    "static/chunks/06wz4-th9pdjn.js"
+  ],
+  "/workspaces/[workspaceSlug]": [
+    "static/chunks/14~jy1v2zsaa8.js"
+  ],
+  "/workspaces/[workspaceSlug]/create-team": [
+    "static/chunks/18cr.3ni0htaa.js"
+  ],
+  "/workspaces/[workspaceSlug]/home": [
+    "static/chunks/06g3daj1_~tux.js"
+  ],
+  "/workspaces/[workspaceSlug]/inbox": [
+    "static/chunks/09m25mpw44kr8.js"
+  ],
+  "/workspaces/[workspaceSlug]/intelligence": [
+    "static/chunks/0dihw3fkokf1d.js"
+  ],
+  "/workspaces/[workspaceSlug]/join-team/[invitationId]": [
+    "static/chunks/083rznsege7_f.js"
+  ],
+  "/workspaces/[workspaceSlug]/purchase-credits": [
+    "static/chunks/0rg.-m3erqgep.js"
+  ],
+  "/workspaces/[workspaceSlug]/referral": [
+    "static/chunks/0d9-ytcgeb6or.js"
+  ],
+  "/workspaces/[workspaceSlug]/robots.txt": [
+    "static/chunks/0nyltcs87t8mx.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings": [
+    "static/chunks/0748f-nrlybi_.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/advanced": [
+    "static/chunks/074lx...v6m6q.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/billing": [
+    "static/chunks/0lymvvnpgovph.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/billing/downgrade": [
+    "static/chunks/16dfin4.jaa53.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/billing/portal": [
+    "static/chunks/0jilz2-il9nl5.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/brand-kits": [
+    "static/chunks/0-ktsezo-ezmj.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/brand-kits/[id]/[[...tab]]": [
+    "static/chunks/0s.f08.mctiif.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/integrations": [
+    "static/chunks/0ahdpnrnxpscs.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/members": [
+    "static/chunks/05f0k1laan7ls.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/privacy": [
+    "static/chunks/0eyw0v2~w-5ut.js"
+  ],
+  "/workspaces/[workspaceSlug]/settings/themes": [
+    "static/chunks/0w49m__zb125f.js"
+  ],
+  "/workspaces/[workspaceSlug]/share/[pid]": [
+    "static/chunks/10~n4x7zk54p2.js"
+  ],
+  "/workspaces/[workspaceSlug]/share/videos/[pid]": [
+    "static/chunks/0ceyzxxoykfoo.js"
+  ],
+  "/workspaces/[workspaceSlug]/shared": [
+    "static/chunks/09m9.8zwfvb0y.js"
+  ],
+  "/workspaces/[workspaceSlug]/sitemap.xml": [
+    "static/chunks/0.zwv.02c_mpe.js"
+  ],
+  "/workspaces/[workspaceSlug]/start-new-trial": [
+    "static/chunks/0ntwxlc86u-l5.js"
+  ],
+  "/workspaces/[workspaceSlug]/start-with-ai/video": [
+    "static/chunks/0069yfngaz0ty.js"
+  ],
+  "/workspaces/[workspaceSlug]/start-with-ai/visuals": [
+    "static/chunks/0z7kb4pw.m21g.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams": [
+    "static/chunks/0_06_1h569y.u.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/arcades": [
+    "static/chunks/0mjnx3si7mi7p.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/folders/[folderId]": [
+    "static/chunks/0b4sll12.3cm3.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/insights": [
+    "static/chunks/0t1p7_oo-.ly3.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/leads": [
+    "static/chunks/0ah6nzojogn-v.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings": [
+    "static/chunks/02w-_awk17ep-.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/advanced": [
+    "static/chunks/0qkvg7l7j~m-_.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/members": [
+    "static/chunks/16.xda5wpgl.r.js"
+  ],
+  "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/privacy": [
+    "static/chunks/0sj46gw0czye2.js"
+  ],
+  "/workspaces/[workspaceSlug]/upgrade/growth": [
+    "static/chunks/0g.109qszxw6e.js"
+  ],
+  "/workspaces/[workspaceSlug]/upgrade/pro": [
+    "static/chunks/0ty6qr3lc4l~b.js"
+  ],
+  "/workspaces/create": [
+    "static/chunks/0e4z571b6x6ru.js"
+  ],
+  "__rewrites": {
+    "afterFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/flows/:pid/view",
+        "destination": "/flows/:pid/edit"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.arcade\\.software$"
+          }
+        ],
+        "source": "/share/:pid",
+        "destination": "/workspaces/:workspace/share/:pid"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.arcade\\.software$"
+          }
+        ],
+        "source": "/sitemap.xml",
+        "destination": "/workspaces/:workspace/sitemap.xml"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.arcade\\.software$"
+          }
+        ],
+        "source": "/robots.txt",
+        "destination": "/workspaces/:workspace/robots.txt"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.localhost(?::\\d+)?$"
+          }
+        ],
+        "source": "/share/:pid",
+        "destination": "/workspaces/:workspace/share/:pid"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.localhost(?::\\d+)?$"
+          }
+        ],
+        "source": "/sitemap.xml",
+        "destination": "/workspaces/:workspace/sitemap.xml"
+      },
+      {
+        "has": [
+          {
+            "type": "header",
+            "key": "host",
+            "value": "^(?<workspace>[^.]+)\\.share\\.localhost(?::\\d+)?$"
+          }
+        ],
+        "source": "/robots.txt",
+        "destination": "/workspaces/:workspace/robots.txt"
+      },
+      {
+        "source": "/share/:pid/width:width",
+        "destination": "/share/:pid?maxWidth=:width"
+      },
+      {
+        "source": "/share/videos/:pid/width:width",
+        "destination": "/share/videos/:pid?maxWidth=:width"
+      },
+      {
+        "source": "/share/:pid/:customLinkId/width:width",
+        "destination": "/share/:pid/:customLinkId?maxWidth=:width"
+      },
+      {
+        "source": "/video/:pid/width:width",
+        "destination": "/video/:pid?maxWidth=:width"
+      },
+      {
+        "source": "/:path*.map",
+        "destination": "/404"
+      },
+      {
+        "source": "/__/auth/:path*"
+      },
+      {
+        "source": "/__/firebase/:path*"
+      },
+      {
+        "source": "/ingest/static/:path*"
+      },
+      {
+        "source": "/ingest/:path*"
+      }
+    ],
+    "fallback": []
+  },
+  "sortedPages": [
+    "/",
+    "/403",
+    "/404",
+    "/_app",
+    "/_error",
+    "/admin",
+    "/admin/brand-kits/[workspaceId]/[brandKitId]",
+    "/admin/broll-eval",
+    "/admin/community-showcase",
+    "/admin/flows",
+    "/admin/impersonate",
+    "/admin/pipeline-tests",
+    "/admin/prompt-video-eval",
+    "/admin/prompt-videos",
+    "/admin/showcase",
+    "/admin/users",
+    "/admin/users/[userId]",
+    "/admin/users/[userId]/flags",
+    "/admin/users/[userId]/flows",
+    "/admin/video-export",
+    "/admin/video-ratings",
+    "/admin/workspaces",
+    "/admin/workspaces/create-enterprise-trial",
+    "/admin/workspaces/transfer",
+    "/admin/workspaces/[workspaceSlug]",
+    "/admin/workspaces/[workspaceSlug]/analytics-30",
+    "/admin/workspaces/[workspaceSlug]/billing",
+    "/admin/workspaces/[workspaceSlug]/brand-kits",
+    "/admin/workspaces/[workspaceSlug]/credits",
+    "/admin/workspaces/[workspaceSlug]/details",
+    "/admin/workspaces/[workspaceSlug]/flags",
+    "/admin/workspaces/[workspaceSlug]/flows",
+    "/admin/workspaces/[workspaceSlug]/fonts",
+    "/admin/workspaces/[workspaceSlug]/insights",
+    "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/flags",
+    "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/flows",
+    "/admin/workspaces/[workspaceSlug]/teams/[teamSlug]/members",
+    "/admin/workspaces/[workspaceSlug]/voices",
+    "/api/add-collaborator",
+    "/api/admin/ai/[id]",
+    "/api/admin/flows",
+    "/api/admin/flows/[pid]",
+    "/api/admin/flows/[pid]/transfer",
+    "/api/admin/prompt-video-generations/transfer",
+    "/api/admin/showcase/get-flows",
+    "/api/admin/teams/[id]/flags",
+    "/api/admin/users/search",
+    "/api/admin/users/[uid]/delete",
+    "/api/admin/users/[uid]/disable",
+    "/api/admin/users/[uid]/flags",
+    "/api/admin/visual-projects/[id]/transfer",
+    "/api/admin/workspaces/add-member",
+    "/api/admin/workspaces/auto-accept-invitations",
+    "/api/admin/workspaces/change-member-role",
+    "/api/admin/workspaces/merge",
+    "/api/admin/workspaces/remove-member",
+    "/api/admin/workspaces/search",
+    "/api/admin/workspaces/transfer",
+    "/api/admin/workspaces/[workspaceId]/add-credits",
+    "/api/admin/workspaces/[workspaceId]/custom-voices",
+    "/api/admin/workspaces/[workspaceId]/flags",
+    "/api/admin/workspaces/[workspaceId]/lock-membership",
+    "/api/admin/workspaces/[workspaceId]/member-transfer",
+    "/api/admin/workspaces/[workspaceId]/overdue",
+    "/api/admin/workspaces/[workspaceId]/restart-expired-trial",
+    "/api/admin/workspaces/[workspaceId]/set-plan",
+    "/api/admin/workspaces/[workspaceId]/start-trial",
+    "/api/admin/workspaces/[workspaceId]/stop-trial",
+    "/api/admin/workspaces/[workspaceId]/unlock-membership",
+    "/api/admin/workspaces/[workspaceId]/update-trial-expiration",
+    "/api/ai/add-hotspots",
+    "/api/ai/flow-hotspots",
+    "/api/ai/flow-video-generation",
+    "/api/ai/flow-visual-copy-generation",
+    "/api/ai/generate-element",
+    "/api/ai/prompt-video-generation",
+    "/api/ai/smart-split",
+    "/api/ai/stock-videos/resolve",
+    "/api/ai/stock-videos/search",
+    "/api/ai/stock-videos/similar",
+    "/api/arcade-ai",
+    "/api/auth/check-token",
+    "/api/auth/desktop",
+    "/api/auth/desktop/[authId]",
+    "/api/auth/desktop/[authId]/authorize",
+    "/api/auth/send-auth-email",
+    "/api/billing/downgrade-to-free",
+    "/api/billing/downgrade-to-pro",
+    "/api/clearbit/toggle",
+    "/api/comments/liveblocks-auth-public",
+    "/api/comments/resolve-flow-users",
+    "/api/comments/resolve-users",
+    "/api/community-showcase",
+    "/api/email-ai",
+    "/api/embed/[pid]/[stepId]",
+    "/api/extension/demo-ai",
+    "/api/extension/demo-end",
+    "/api/extension/demo-start",
+    "/api/extension/demo-status",
+    "/api/extension/flow-status",
+    "/api/extension/image",
+    "/api/extension/scrape",
+    "/api/extension/upload-url",
+    "/api/extension-cookie-login",
+    "/api/flows/process-access-request",
+    "/api/flows/public-data",
+    "/api/flows/[pid]/export",
+    "/api/flows/[pid]/invite-user-to-view-flow",
+    "/api/flows/[pid]/public-data",
+    "/api/flows/[pid]/update-step",
+    "/api/flows/[pid]/video-generation/[videoGenerationId]",
+    "/api/flows/[pid]/[customLinkId]/public-data",
+    "/api/flowsCollections/process-access-request",
+    "/api/flowsCollections/[pid]/invite-user-to-view-collection",
+    "/api/flowsCollections/[pid]/public-data",
+    "/api/get-search-key",
+    "/api/health",
+    "/api/images/attributes/[id]",
+    "/api/ingest/[code]",
+    "/api/leads/subscribe",
+    "/api/leads/unsubscribe",
+    "/api/liveblocks/room-notification-settings",
+    "/api/liveblocks/webhook",
+    "/api/login",
+    "/api/logout",
+    "/api/mux/create-asset",
+    "/api/mux/webhook",
+    "/api/oembed",
+    "/api/revalidate",
+    "/api/saml/create-from-metadata",
+    "/api/saml/provider",
+    "/api/saml/provider-for-domain",
+    "/api/slack/event",
+    "/api/slack/redirect",
+    "/api/storage-emulator/[bucket]/[...path]",
+    "/api/stripe/webhook",
+    "/api/team/create",
+    "/api/team/update-logo",
+    "/api/team/[teamId]/update-integrations",
+    "/api/team/[teamId]/update-slug",
+    "/api/team/[teamId]/webhook/disable",
+    "/api/team/[teamId]/webhook/update-url",
+    "/api/test/stripe",
+    "/api/typeform/webhooks",
+    "/api/upload/init",
+    "/api/upload/[uploadId]/end",
+    "/api/upload/[uploadId]/image",
+    "/api/upload/[uploadId]/progress",
+    "/api/upload/[uploadId]/upload-url",
+    "/api/vercel/preview",
+    "/api/viewer/form",
+    "/api/workspace/accept-invite",
+    "/api/workspace/check-slug",
+    "/api/workspace/create",
+    "/api/workspace/request-membership",
+    "/api/workspace/request-role-upgrade",
+    "/api/workspace/[workspaceId]/accept-role-upgrade",
+    "/api/workspace/[workspaceId]/approve-member",
+    "/api/workspace/[workspaceId]/brand-kits",
+    "/api/workspace/[workspaceId]/brand-kits/backgrounds",
+    "/api/workspace/[workspaceId]/brand-kits/copy",
+    "/api/workspace/[workspaceId]/brand-kits/runs/[runId]/status",
+    "/api/workspace/[workspaceId]/deactivate-member",
+    "/api/workspace/[workspaceId]/delete",
+    "/api/workspace/[workspaceId]/invite",
+    "/api/workspace/[workspaceId]/join-team",
+    "/api/workspace/[workspaceId]/member-count",
+    "/api/workspace/[workspaceId]/nominate-member",
+    "/api/workspace/[workspaceId]/reject-member",
+    "/api/workspace/[workspaceId]/reject-role-upgrade",
+    "/api/workspace/[workspaceId]/rescind-invite",
+    "/api/workspace/[workspaceId]/resend-invite",
+    "/api/workspace/[workspaceId]/teams/[teamId]/deactivate-member",
+    "/api/workspace/[workspaceId]/teams/[teamId]/invite",
+    "/api/workspace/[workspaceId]/teams/[teamId]/update-member",
+    "/api/workspace/[workspaceId]/update-member",
+    "/api/workspace/[workspaceId]/update-slug",
+    "/api/workspace/[workspaceId]/upgrade",
+    "/archived",
+    "/auth",
+    "/auth/desktop/[authId]",
+    "/auth/figma/[authId]",
+    "/auth/magic-link",
+    "/collaborate/[token]",
+    "/collections/[pid]/authorize/[memberId]",
+    "/collections/[pid]/[view]",
+    "/community-showcase",
+    "/deleted",
+    "/desktop/download",
+    "/dev/custom-code-agent",
+    "/dev/custom-code-examples",
+    "/dev/p2v-render-tests",
+    "/email-verification",
+    "/extension-installed",
+    "/figma/ui",
+    "/flows/shared",
+    "/flows/team/invite/[invitationId]",
+    "/flows/[pid]",
+    "/flows/[pid]/authorize/[memberId]",
+    "/flows/[pid]/edit",
+    "/flows/[pid]/guide",
+    "/flows/[pid]/insights",
+    "/flows/[pid]/version/[versionId]",
+    "/flows/[pid]/video",
+    "/home",
+    "/inbox",
+    "/integrations/gong/authorize",
+    "/integrations/gong/callback",
+    "/integrations/hubspot/authorize",
+    "/integrations/hubspot/callback",
+    "/integrations/sfdc/authorize",
+    "/integrations/sfdc/callback",
+    "/join-workspace/[invitationId]",
+    "/logout",
+    "/maintenance",
+    "/mobile",
+    "/overdue",
+    "/preview",
+    "/preview/error",
+    "/preview/video/[gid]",
+    "/preview/[id]",
+    "/prompt-videos/[pid]",
+    "/prompt-videos/[pid]/edit",
+    "/referral",
+    "/referral/[workspace_id]",
+    "/robots.txt",
+    "/search",
+    "/settings/billing",
+    "/share/collections/[pid]",
+    "/share/collections/[pid]/view",
+    "/share/videos/[pid]",
+    "/share/[pid]",
+    "/share/[pid]/guide",
+    "/share/[pid]/offline",
+    "/share/[pid]/version/[versionId]",
+    "/share/[pid]/[customLinkId]",
+    "/sso/[id]",
+    "/upload/desktop/[uploadInfo]",
+    "/upload/figma/[uploadId]",
+    "/upload/flow",
+    "/upload/media",
+    "/upload/[id]/desktop/[uploadInfo]",
+    "/upload/[id]/flow",
+    "/video/[pid]",
+    "/videos/[pid]",
+    "/visual-projects/[pid]/edit",
+    "/visual-projects/[pid]/template-matrix",
+    "/visual-projects/[pid]/template-matrix/formats",
+    "/welcome",
+    "/workspaces",
+    "/workspaces/create",
+    "/workspaces/[workspaceSlug]",
+    "/workspaces/[workspaceSlug]/create-team",
+    "/workspaces/[workspaceSlug]/home",
+    "/workspaces/[workspaceSlug]/inbox",
+    "/workspaces/[workspaceSlug]/intelligence",
+    "/workspaces/[workspaceSlug]/join-team/[invitationId]",
+    "/workspaces/[workspaceSlug]/purchase-credits",
+    "/workspaces/[workspaceSlug]/referral",
+    "/workspaces/[workspaceSlug]/robots.txt",
+    "/workspaces/[workspaceSlug]/settings",
+    "/workspaces/[workspaceSlug]/settings/advanced",
+    "/workspaces/[workspaceSlug]/settings/billing",
+    "/workspaces/[workspaceSlug]/settings/billing/downgrade",
+    "/workspaces/[workspaceSlug]/settings/billing/portal",
+    "/workspaces/[workspaceSlug]/settings/brand-kits",
+    "/workspaces/[workspaceSlug]/settings/brand-kits/[id]/[[...tab]]",
+    "/workspaces/[workspaceSlug]/settings/integrations",
+    "/workspaces/[workspaceSlug]/settings/members",
+    "/workspaces/[workspaceSlug]/settings/privacy",
+    "/workspaces/[workspaceSlug]/settings/themes",
+    "/workspaces/[workspaceSlug]/share/videos/[pid]",
+    "/workspaces/[workspaceSlug]/share/[pid]",
+    "/workspaces/[workspaceSlug]/shared",
+    "/workspaces/[workspaceSlug]/sitemap.xml",
+    "/workspaces/[workspaceSlug]/start-new-trial",
+    "/workspaces/[workspaceSlug]/start-with-ai/video",
+    "/workspaces/[workspaceSlug]/start-with-ai/visuals",
+    "/workspaces/[workspaceSlug]/teams",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/arcades",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/folders/[folderId]",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/insights",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/leads",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/advanced",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/members",
+    "/workspaces/[workspaceSlug]/teams/[teamSlug]/settings/privacy",
+    "/workspaces/[workspaceSlug]/upgrade/growth",
+    "/workspaces/[workspaceSlug]/upgrade/pro",
+    "/[pid]",
+    "/[pid]/[customLinkId]"
+  ]
+};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
