@@ -93,6 +93,9 @@
   .nav-links a{text-decoration:none;color:var(--ink-soft);font-size:.92rem;font-weight:500;transition:color .15s;}
   .nav-links a:hover{color:var(--ink);}
   .nav-right{display:flex;align-items:center;gap:14px;}
+  /* mobile bottom CTA bar — floating glass pill */
+  .mobile-bar{display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));width:calc(100% - 24px);max-width:520px;z-index:120;padding:9px;border-radius:26px;background:rgba(255,255,255,.55);backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,.75);box-shadow:0 14px 36px -10px rgba(16,24,40,.3);}
+  .mobile-bar .btn{flex:1;padding-top:16px;padding-bottom:16px;font-size:1.02rem;border-radius:18px;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;justify-content:center;
     font-weight:600;font-size:.94rem;text-decoration:none;cursor:pointer;
@@ -460,11 +463,11 @@
   .tstat .n{font-size:clamp(2.25rem,3vw,2.75rem);font-weight:800;letter-spacing:-.03em;color:var(--blue);line-height:1;}
   .tstat .l{font-size:.78rem;color:var(--muted);font-weight:500;}
   .photos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
-  .photo{aspect-ratio:3/4;border-radius:14px;overflow:hidden;position:relative;background:var(--bg-soft);border:1px solid var(--line);}
+  .photo{position:relative;text-align:center;}
   .photo .ph-fill{position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,#e9edf6 0 10px,#eff3fa 10px 20px);}
-  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
-  .photo .ph-name{position:absolute;left:0;right:0;bottom:0;padding:8px 9px;background:linear-gradient(transparent,rgba(10,14,26,.78));color:#fff;font-size:.66rem;font-weight:600;line-height:1.25;}
-  .photo .ph-name span{display:block;color:rgba(255,255,255,.65);font-weight:500;font-size:.62rem;}
+  .photo img{width:100%;height:auto;display:block;}
+  .photo .ph-name{padding:6px 4px 0;color:var(--fg);font-size:.66rem;font-weight:600;line-height:1.25;}
+  .photo .ph-name span{display:block;color:var(--muted);font-weight:500;font-size:.62rem;}
 
   /* ── CLIENTS ── */
   .clients{background:var(--bg-soft);}
@@ -731,6 +734,9 @@
   /* responsive */
   @media (max-width:940px){
     .nav-links{display:none;}
+    .nav-right .btn-primary{display:none;}
+    .mobile-bar{display:flex;}
+    body{padding-bottom:76px;}
     .filter-grid,.team-grid{grid-template-columns:1fr;gap:40px;}
     .rgrid{grid-template-columns:1fr;}
     .tgrid{grid-template-columns:1fr;}
@@ -780,7 +786,6 @@
     .cta-left,.cta-right{padding:32px 24px;}
     .marquee-track{gap:42px;}
     .marquee-track img{height:44px;}
-    .nav-right .btn-ghost{display:none;}
   }
 </style>
 <style id="holo-styles">
@@ -947,6 +952,10 @@
     <a href="#formulario" class="btn btn-primary">Agendar diagnóstico</a>
   </div>
 </nav>
+<!-- MOBILE BOTTOM BAR -->
+<div class="mobile-bar">
+  <a href="#formulario" class="btn btn-primary">Agendar diagnóstico →</a>
+</div>
 
 <!-- HERO -->
 <header class="hero" id="top">
@@ -1259,14 +1268,14 @@
         </div>
       </div>
       <div class="photos">
-        <div class="photo"><img src="assets/team/omar-fuentes.png" alt="Omar Fuentes"><div class="ph-name">Omar Fuentes<span>Director general</span></div></div>
-        <div class="photo"><img src="assets/team/andres-levanti.png" alt="Andrés Levantí"><div class="ph-name">Andrés Levantí<span>Estrategia</span></div></div>
-        <div class="photo"><img src="assets/team/candelaria-fernandez.png" alt="Candelaria Fernández"><div class="ph-name">Candelaria Fernández<span>Paid Media</span></div></div>
-        <div class="photo"><img src="assets/team/daniel-olivares.png" alt="Daniel Olivares"><div class="ph-name">Daniel Olivares<span>SEO &amp; Analytics</span></div></div>
-        <div class="photo"><img src="assets/team/carla-cifuentes.png" alt="Carla Cifuentes"><div class="ph-name">Carla Cifuentes<span>Contenido</span></div></div>
-        <div class="photo"><img src="assets/team/keyner-marin.png" alt="Keyner Marín"><div class="ph-name">Keyner Marín<span>Dev Web</span></div></div>
-        <div class="photo"><img src="assets/team/angel-suleiman.png" alt="Ángel Suleiman"><div class="ph-name">Ángel Suleiman<span>Diseño</span></div></div>
-        <div class="photo"><img src="assets/team/claudia-agurto.png" alt="Claudia Agurto"><div class="ph-name">Claudia Agurto<span>Cuentas</span></div></div>
+        <div class="photo"><img src="assets/team/omar-fuentes.png" alt="Omar Fuentes"><div class="ph-name">Omar Fuentes</div></div>
+        <div class="photo"><img src="assets/team/andres-levanti.png" alt="Andrés Levantí"><div class="ph-name">Andrés Levantí</div></div>
+        <div class="photo"><img src="assets/team/candelaria-fernandez.png" alt="Candelaria Fernández"><div class="ph-name">Candelaria Fernández</div></div>
+        <div class="photo"><img src="assets/team/daniel-olivares.png" alt="Daniel Olivares"><div class="ph-name">Daniel Olivares</div></div>
+        <div class="photo"><img src="assets/team/carla-cifuentes.png" alt="Carla Cifuentes"><div class="ph-name">Carla Cifuentes</div></div>
+        <div class="photo"><img src="assets/team/keyner-marin.png" alt="Keyner Marín"><div class="ph-name">Keyner Marín</div></div>
+        <div class="photo"><img src="assets/team/angel-suleiman.png" alt="Ángel Suleiman"><div class="ph-name">Ángel Suleiman</div></div>
+        <div class="photo"><img src="assets/team/claudia-agurto.png" alt="Claudia Agurto"><div class="ph-name">Claudia Agurto</div></div>
       </div>
     </div>
   </div>
